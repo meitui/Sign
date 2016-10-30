@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>Signin</title>
+	<meta  http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=0.5, maximum-scale=0.5,user-scalable=no">
+	<link href="css/idea/Signin.css" rel="stylesheet" type="text/css"/>
+	<script src="js/lib/jquery-3.1.0.min.js"></script>
+	<script src="js/idea/Signin.js">
+	</script>
+</head>
+<body>
+     <h1>登录页面</h1>
+     <form>
+          <span class="err"></span>
+          <p class="pst_relative">
+		  <label>用户名：</label>
+		  <input type="text" id="username">
+		  </p>
+		  <p class="pst_relative">
+		  <label>密码：</label>
+		  <input type="password" id="password" >
+		  </p>
+		      <span class="remmber">  
+		          <input type="checkbox" id="remmberpwd">  
+		          <label for="remmberpwd">记住密码</label>  
+		      </span>  
+		      <a class="forgetpwd" href="#">忘记密码？</a>  
+		  </p> 
+		      
+		  
+		  <div><label>验证码：<input id="textVerifyCode" type="text" />&nbsp<img src="" alt="验证码" id="imgValidateCode" />&nbsp<a href="javascript:;" id="changimg" title="重新获取验证码"></a>
+        </label></div>
+        <p>
+        <input id="signin" type="button"onkeydown="keydown(event)" value="登录">  
+        <a class="" href="Signup.html">免费注册</a></p> 
+   </div>
+</body>
+</html>
